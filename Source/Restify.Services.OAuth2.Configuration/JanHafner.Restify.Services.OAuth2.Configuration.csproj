@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5BBC9E95-46C0-4789-8F25-1F1DCF7EC58F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JanHafner.Restify.Services.OAuth2.Configuration</RootNamespace>
+    <AssemblyName>JanHafner.Restify.Services.OAuth2.Configuration</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Annotations\BaseTypeRequiredAttribute.cs">
+      <Link>Annotations\BaseTypeRequiredAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Annotations\CanBeNullAttribute.cs">
+      <Link>Annotations\CanBeNullAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Annotations\CollectionAccessAttribute.cs">
+      <Link>Annotations\CollectionAccessAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Annotations\CollectionAccessType.cs">
+      <Link>Annotations\CollectionAccessType.cs</Link>
+    </Compile>
+    <Compile Include="..\Annotations\ImplicitUseKindFlags.cs">
+      <Link>Annotations\ImplicitUseKindFlags.cs</Link>
+    </Compile>
+    <Compile Include="..\Annotations\ImplicitUseTargetFlags.cs">
+      <Link>Annotations\ImplicitUseTargetFlags.cs</Link>
+    </Compile>
+    <Compile Include="..\Annotations\InstantHandleAttribute.cs">
+      <Link>Annotations\InstantHandleAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Annotations\InvokerParameterNameAttribute.cs">
+      <Link>Annotations\InvokerParameterNameAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Annotations\ItemCanBeNullAttribute.cs">
+      <Link>Annotations\ItemCanBeNullAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Annotations\ItemNotNullAttribute.cs">
+      <Link>Annotations\ItemNotNullAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Annotations\LinqTunnelAttribute.cs">
+      <Link>Annotations\LinqTunnelAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Annotations\LocalizationRequiredAttribute.cs">
+      <Link>Annotations\LocalizationRequiredAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Annotations\MeansImplicitUseAttribute.cs">
+      <Link>Annotations\MeansImplicitUseAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Annotations\NotifyPropertyChangedInvocatorAttribute.cs">
+      <Link>Annotations\NotifyPropertyChangedInvocatorAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Annotations\NotNullAttribute.cs">
+      <Link>Annotations\NotNullAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Annotations\PublicAPIAttribute.cs">
+      <Link>Annotations\PublicAPIAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Annotations\PureAttribute.cs">
+      <Link>Annotations\PureAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Annotations\RegexPatternAttribute.cs">
+      <Link>Annotations\RegexPatternAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Annotations\StringFormatMethodAttribute.cs">
+      <Link>Annotations\StringFormatMethodAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Annotations\UsedImplicitlyAttribute.cs">
+      <Link>Annotations\UsedImplicitlyAttribute.cs</Link>
+    </Compile>
+    <Compile Include="..\Annotations\ValueProviderAttribute.cs">
+      <Link>Annotations\ValueProviderAttribute.cs</Link>
+    </Compile>
+    <Compile Include="ConfigurationElements\AuthorizationContextConfigurationConfigurationElement.cs" />
+    <Compile Include="ConfigurationElements\AuthorizationContextConfigurationsElementCollection.cs" />
+    <Compile Include="ConfigurationElements\FileSystemAuthorizationStoreConfigurationElement.cs" />
+    <Compile Include="ConfigurationElements\RestifyConfigurationSection.cs" />
+    <Compile Include="ConfigurationElements\OAuth2ConfigurationElement.cs" />
+    <Compile Include="ConfigurationElements\ScopeConfigurationElement.cs" />
+    <Compile Include="ConfigurationElements\ScopesConfigurationElementCollection.cs" />
+    <Compile Include="ConfigurationElements\X509CertificateConfigurationElement.cs" />
+    <Compile Include="IAuthorizationConfiguration.cs" />
+    <Compile Include="IAuthorizationContextConfiguration.cs" />
+    <Compile Include="IFileSystemAuthorizationStoreConfiguration.cs" />
+    <Compile Include="IRestifyConfiguration.cs" />
+    <Compile Include="IScope.cs" />
+    <Compile Include="IX509CertificateConfiguration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

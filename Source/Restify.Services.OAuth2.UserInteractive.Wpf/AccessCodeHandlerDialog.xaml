@@ -1,0 +1,10 @@
+﻿<windows:Window x:Class="JanHafner.Restify.Services.OAuth2.UserInteractive.Wpf.AccessCodeHandlerDialog"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:windows="clr-namespace:System.Windows;assembly=PresentationFramework"
+                xmlns:controls="clr-namespace:System.Windows.Controls;assembly=PresentationFramework"
+                Title="AccessCodeHandlerDialog" Topmost="True" Height="400" Width="700">
+    <controls:Grid>
+        <controls:WebBrowser Name="WebBrowser1" />
+    </controls:Grid>
+</windows:Window>
