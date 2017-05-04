@@ -1,6 +1,6 @@
 # Restify
 
-Lets you build strongly typed SDK's for REST endpoints.
+Lets you build strongly typed classes for REST endpoints.
 
 ## Info
 
